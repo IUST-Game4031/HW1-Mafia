@@ -8,6 +8,11 @@ public class SceneLoader : MonoBehaviour
     public GameObject loaderUI;
     public Slider progressBar;
 
+    public void BackToMenu()
+    {
+        LoadScene(0);
+    }
+
     public void LoadScene(int index)
     {
         StartCoroutine(LoadSceneCoroutine(index));

@@ -8,6 +8,21 @@ public class SceneLoader : MonoBehaviour
     public GameObject loaderUI;
     public Slider progressBar;
 
+    public void On8PlayerButtonClicked()
+    {
+        PlayerPrefs.SetInt("PlayerCount", 8);
+    }
+
+    public void On10PlayerButtonClicked()
+    {
+        PlayerPrefs.SetInt("PlayerCount", 10);
+    }
+
+    public void On12PlayerButtonClicked()
+    {
+        PlayerPrefs.SetInt("PlayerCount", 12);
+    }
+
     public void BackToMenu()
     {
         LoadScene(0);

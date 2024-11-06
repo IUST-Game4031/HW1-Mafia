@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 27c5649ce4068e34ab0a11ac98c0f7bd
+guid: 6bca35f508e3d0343a49b8794b9d3863
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6473871871993780346
-    second: startMenu_0
+      213: -398421700628370466
+    second: openart-image_6JVx4Krp_1730909201857_raw_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,19 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: startMenu_0
+      name: openart-image_6JVx4Krp_1730909201857_raw_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 832
-        height: 1216
+        width: 600
+        height: 904
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a781593ea20d7d950800000000000000
-      internalID: 6473871871993780346
+      spriteID: edb2d3ff295887af0800000000000000
+      internalID: -398421700628370466
       vertices: []
       indices: 
       edges: []
@@ -174,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      startMenu_0: 6473871871993780346
+      openart-image_6JVx4Krp_1730909201857_raw_0: -398421700628370466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -31,6 +31,8 @@ public class CharacterAssignment : MonoBehaviour
     private int currentPlayerIndex = 0;                         // Index to track current player
     private int citizenIndex = 1;                               // Index of current citizen -> to show their names in order
 
+    public bool wait = false;
+
     public SceneLoader sceneLoader;
 
     void Start()
@@ -105,6 +107,7 @@ public class CharacterAssignment : MonoBehaviour
     {
         characterImage.sprite = defaultImage;
         characterName.text = defaultText;
+        nextCharacterButton.GetComponentInChildren<TMP_Text>().text = "Click To See Your Role!";
     }
 
     void ShowNextCharacter()
@@ -112,26 +115,37 @@ public class CharacterAssignment : MonoBehaviour
         // Check if all characters are assigned
         if (currentPlayerIndex < characters.Count)
         {
-            Character currentCharacter = characters[currentPlayerIndex];
-            characterImage.sprite = currentCharacter.image;
-            // Check for the index of citizen to show citizens in correct order
-            if (currentCharacter.name == "Citizen")
+            if (wait)
             {
-                characterName.text = currentCharacter.name + " " + citizenIndex.ToString();
-                citizenIndex++;
-            }
-            else
+                ShowDefaultImage();
+                wait = false;
+            } else
             {
-                characterName.text = currentCharacter.name;
-            }
+                Character currentCharacter = characters[currentPlayerIndex];
+                characterImage.sprite = currentCharacter.image;
+                // Check for the index of citizen to show citizens in correct order
+                if (currentCharacter.name == "Citizen")
+                {
+                    characterName.text = currentCharacter.name;
+                    citizenIndex++;
+                }
+                else
+                {
+                    characterName.text = currentCharacter.name;
+                }
 
-            // Move to the next player for the following click
-            currentPlayerIndex++;
+                nextCharacterButton.GetComponentInChildren<TMP_Text>().text = "Click To See Next Role!";
 
-            // Change the button text for the last player
-            if (currentPlayerIndex == characters.Count)
-            {
-                nextCharacterButton.GetComponentInChildren<TMP_Text>().text = "Click to return to Main Menu!";
+                // Move to the next player for the following click
+                currentPlayerIndex++;
+
+                // Change the button text for the last player
+                if (currentPlayerIndex == characters.Count)
+                {
+                    nextCharacterButton.GetComponentInChildren<TMP_Text>().text = "Click to return to Main Menu!";
+                }
+
+                wait = true;
             }
         }
         else

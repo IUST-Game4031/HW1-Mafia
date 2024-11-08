@@ -779,6 +779,7 @@ MonoBehaviour:
   priestSprite: {fileID: -3762407912271031857, guid: 621a2a27af6158042ad4b48377265cb4, type: 3}
   defaultImage: {fileID: -267956413792038929, guid: 794c07139e67f1c45a4721d629b37398, type: 3}
   defaultText: ---
+  wait: 0
   sceneLoader: {fileID: 0}
 --- !u!4 &622478005
 Transform:

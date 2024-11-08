@@ -7,6 +7,8 @@ TagManager:
   - Character
   - Alert_Text
   - Title_Text
+  - SceneLoader
+  - Music
   layers:
   - Default
   - TransparentFX
